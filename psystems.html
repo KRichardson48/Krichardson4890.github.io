@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Planetary Systems</title>
+      <!-- <link rel="stylesheet" href="w3-4.css"> -->
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   </head>
+   <body class="w3-black">
+      <div class="w3-bar w3-black">
+         <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+         <a href="galaxies2.html" class="w3-bar-item w3-button w3-mobile">Galaxies</a>
+         <a href="stars.html" class="w3-bar-item w3-button w3-mobile">Stars</a>
+         <a href="psystems.html" class="w3-bar-item w3-button w3-mobile">Planetary Systems</a>
+         <a href="planets.html" class="w3-bar-item w3-button w3-mobile">Planets</a>
+         <a href="moons.html" class="w3-bar-item w3-button w3-mobile">Moons</a>
+      </div>
+      <div class="w3-content" style="max-width:2000px;">
+         <div class="w3-display-container">
+            <img src="imgs/test.jpg" alt="milkyway" style="width:100%">
+            <div class="w3-display-bottommiddle w3-center w3-text-white w3-margin-top w3-hide-small w3-hide-medium">
+               <h1 class="w3-jumbo w3-animate-top" style="text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Planetary Systems</h1>
+            </div>
+         </div>
+         <div class="w3-container w3-content w3-padding-3 w3-hide-large">
+            <h1 class="w3-center">Planetary Systems</h1>
+         </div>
+         <div class="w3-content" style="max-width:2000px; margin-top:46px">
+            <!-- Automatic Slideshow Images -->
+            <!-- Image 1 -->
+            <div class="mySlides w3-display-container w3-center">
+               <img src="imgs/solarsystem.jpg" class="w3-border" alt="" style="padding:4px;width:40%">
+            </div>
+            <!-- Image 2 -->
+            <div class="mySlides w3-display-container w3-center">
+               <img src="imgs/planetview.jpg" class="w3-border" alt="" style="padding:4px;width:40%">
+            </div>
+            <!-- Image 3 -->
+            <div class="mySlides w3-display-container w3-center">
+               <img src="imgs/dusty.jpg" class="w3-border" alt="" style="padding:4px;width:40%">
+            </div>
+            <br><br>
+         </div>
+         <div class="w3-container w3-content w3-center w3-padding-3 w3-topbar w3-bottombar w3-white w3-black">
+            <p class="w3-justify w3-large w3-text-white">A planetary system is a set of gravitationally bound non-stellar objects in or out of orbit around a star or star system. Generally speaking, systems with one or more planets constitute a planetary system, although such systems may also consist of bodies such as dwarf planets, asteroids, natural satellites, meteoroids, comets, planetesimals and circumstellar disks. The Sun together with its planetary system, which includes Earth, is known as the Solar System. The term exoplanetary system is sometimes used in reference to other planetary systems. As of 1 April 2018, there are 3,758 confirmed planets in 2,808 systems, with 627 systems having more than one planet. Debris disks are also known to be common, though other objects are more difficult to observe. Of particular interest to astrobiology is the habitable zone of planetary systems where planets could have surface liquid water, and thus the capacity to harbor Earth-like life.</p>
+         </div>
+      </div>
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-white" id="contact">
+         <h2 class="w3-text-white">Contact Me</h2>
+         <hr style="width:200px" class="w3-opacity">
+         <div class="w3-section">
+            <p><i class="w3-text-white w3-xxlarge w3-margin-right"></i> Kevin Richardson</p>
+            <p><i class="w3-text-white w3-xxlarge w3-margin-right"></i> Manchester, New Hampshire</p>
+            <a href="mailto:kwr1004@wildcats.unh.edu"><i class="w3-text-white w3-xxlarge w3-margin-right"> </i> Email: kwr1004@wildcats.edu</a>
+         </div>
+         <br>
+      </div>
+      <script>
+         // Automatic Slideshow - change image every 3 seconds
+         var myIndex = 0;
+         carousel();
+         function carousel() {
+           var i;
+           var x = document.getElementsByClassName("mySlides");
+           for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+           }
+           myIndex++;
+           if (myIndex > x.length) {myIndex = 1}
+           x[myIndex-1].style.display = "block";
+           setTimeout(carousel, 3000);
+         }
+      </script>
+   </body>
+</html>
+
